@@ -1,0 +1,103 @@
+\documentclass[12pt, oneside]{article}   	
+\usepackage[margin=1in]{geometry}                		
+\geometry{letterpaper}                   		
+\usepackage{graphicx}				
+\usepackage{amssymb}
+\usepackage[document]{ragged2e}
+\usepackage{parskip}
+
+
+\title{Datastax Technical Screen}
+\author{Shuhua (Anna) Liang}
+\date{\today}							
+
+
+\begin{document}
+\maketitle
+
+\section*{DataStax Enterprise}
+\subsection*{Gotchas}
+Having installed and explored the DataStax Enterprise software on my Mac unix system, I learned that it is dealing with the Cassandra and NoSQL-based competitive big data technology. Also, it allows us to easily update real time data and analyze the data in one integrated database solution. 
+
+From the demo, I found that there are four column families defined in the keyspace. The four column families include stock portfolio, stock historical end-of-day price, current value, and historical loss. These column families come in a static format of column names and column values. For instance, column family ``Portfolio'' has portfolio numbers as column names and current price as column values. 
+
+This example nicely demonstrated how DataStax Enterprise multitasks on stock analysis and price updates. Following is a screen shot of the results of Largest Historical 10-day Loss for each portfolio from the demo:\\
+
+\includegraphics[width=160mm]{DSE1.png}
+
+\vspace{3mm}
+
+While running the MapReduced Job in Hive, I was able to track the job progress:\\
+
+\vspace{5mm}
+
+\includegraphics[width=160mm]{Track1.png}
+\includegraphics[width=160mm]{Track2.png}
+
+\subsection*{Suggestion}
+A little suggestion for the Portfolio Manager Demo would be the row names for column family Portfolio. Instead of providing users with the portfolio numbers, if might be helpful to show the stock ticker symbols. For example, it can display ``APPL" for Apple, Inc. 
+
+
+\section*{Opscenter}
+\subsection*{Gotchas}
+Because of limited memory on my machine, I operated OpsCenter on a single-node cluster. I learned that this software monitors the cassandra server, and Datastax Enterprise is bridged to OpsCenter. Following is a screen shot of the monitoring dash board on the demo operation:\\
+
+\includegraphics[width=160mm]{Ops3.png}
+
+\vspace{3mm}
+
+I learned that OpsCenter makes cluster management such an easy job. It allows users to add and connect clusters in simple steps. OpsCenter made using local resources and linking to clouds, such as Amazon EC2, an easy and time-saving task. 
+
+Following are screen shots of Hadoop job and node(s) tracking:\\
+\vspace{3mm}
+
+\includegraphics[width=160mm, height=80mm]{HadoopJobs.png}
+
+\includegraphics[width=160mm]{Ops2.png}
+
+\vspace{3mm}
+
+OpsCenter provides intuitive visualization of database management. Also, it allows users to quickly catch cluster and node operations, which can avoid cluster collapses. 
+
+\section*{Testing Scenario}
+\subsection*{Methodology}
+For the scenario of a three-node cluster that has one failed, Cassandra is architected to continue to operate the remaining two nodes. Since there is not a master node, all three nodes are peer nodes, and they all serve the same functions while splitting up the replicas.
+
+Assuming there are two replicas of each set of data in this three-node cluster, which follows the general rule of consistency level less than the total number of nodes. To validate that the failed node was able to correctly repair data that was inserted while it was down, we can match replicas row keys. We would find the node that contains the replica of the set that had been written on and  then extract the replicas. Next, we would match the extracted replica with the repaired replica. If they match perfectly, then we conclude that we have successfully repaired the failed node.
+
+\subsection*{Demonstration}
+
+For example, if we have datasets A, B, C, D, E and F, they will be stored in three nodes as the following diagram:\\
+
+\includegraphics[width=150mm]{slide1.png}
+
+In this scenario, we can assume that Node 1 fails, and the datasets $A_{1}$ and $D_{1}$ were the ones that would have been revised. After this node is repaired, we cans extract the replicas of $A_2$ and $D_2$ from Node 2. And then, we will match the elements based on row keys in $A_2$ and $D_2$ to those in $A_1$ and $D_1$, respectively. A perfect match in those files would indicate a correct repair.
+
+\section*{Coding in Python}
+With a given system log file, I was supposed to  write a script to generate an aggregated list of exceptions. In other words, this is to filter a file that contains various information. I first read the file into Python as list of strings. Then, I identified the indices of lines that start with ``Caused by'', which means they are exceptions - let us call them the ``exception indices"; this allows me to placemark the exceptions. There are lines following the those exceptions that gives extra information about he exceptions. Using the exception indices, I then identified the consecutive lines starting with an indent that follow by each exception index. Having identified these lines, I wrote them into a new file called Exceptions.txt (Attached). 
+
+Notice there are two types of exceptions - one is originated from a JavaRuntimeException and the other from HiveRuntimeException. To separate those exceptions, I used a similar technique. I read in the Exceptions file and searched for exceptions notes containing the pattern``HiveException". Then, I wrote those lines along with their extra information lines into a new file called HiveRuntimeException.txt (Attached). Similar, for Java runtime exceptions, I searched for exceptions containing the pattern ``java.lang.ClassCastException" (See attached file JavaRuntimeException.txt). 
+
+\section*{Conclusion}
+This technical screen is interesting because I had a chance to learn, explore, and understand DataStax's productions. With a brief exercise, I was only able to learn the basics of DataStax. I desire an opportunity to meeting with the experts at DataStax and learn more about this company and this industry. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

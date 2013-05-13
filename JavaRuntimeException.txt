@@ -1,0 +1,416 @@
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+
+Caused by: java.lang.ClassCastException: org.apache.hadoop.hive.serde2.lazy.objectinspector.primitive.LazyShortObjectInspector cannot be cast to org.apache.hadoop.hive.serde2.objectinspector.primitive.BinaryObjectInspector
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serialize(TableMapping.java:146)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.serializeToBytes(TableMapping.java:124)
+
+	at org.apache.hadoop.hive.cassandra.serde.RegularTableMapping.write(RegularTableMapping.java:97)
+
+	at org.apache.hadoop.hive.cassandra.serde.TableMapping.getWritable(TableMapping.java:64)
+
+	at org.apache.hadoop.hive.cassandra.serde.AbstractColumnSerDe.serialize(AbstractColumnSerDe.java:164)
+
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:569)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.TableScanOperator.processOp(TableScanOperator.java:83)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:531)
+
+	... 9 more
+

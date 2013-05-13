@@ -1,0 +1,192 @@
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"joinkey0":"ric-a","joinkey1":"2012-01-02 12:00:00"},"value":{"_col0":"A","_col1":"2012-01-02 12:00:00","_col2":"","_col3":"1971-02-17 11:51:44.7","_col4":2.6547364E-34,"_col5":"???\b include\u0005ric-a\n company-a?\u000b exchange-a\u0007 sector\u0014 2012-01-03 12:","_col6":"0:00A\u001f?\nA\u001f?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n\u000fA\u001f?\nA\u001f","_col7":"","_col8":"?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n","_col9":null,"_col10":null,"_col11":null,"_col12":null,"_col13":null,"_col14":15,"_col15":null,"_col16":9.1073005E-20,"_col17":null,"_col18":null,"_col19":null,"_col20":null,"_col21":null,"_col22":9.1073005E-20,"_col23":null,"_col24":-1.52012298E14,"_col25":-1.51732605E14,"_col26":0.0,"_col27":0.0},"alias":0}
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:256)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.ArrayIndexOutOfBoundsException
+
+	at org.apache.hadoop.hive.ql.exec.JoinOperator.processOp(JoinOperator.java:131)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"joinkey0":"ric-a","joinkey1":"2012-01-02 12:00:00"},"value":{"_col0":"A","_col1":"2012-01-02 12:00:00","_col2":"","_col3":"1971-02-17 11:51:44.7","_col4":2.6547364E-34,"_col5":"???\b include\u0005ric-a\n company-a?\u000b exchange-a\u0007 sector\u0014 2012-01-03 12:","_col6":"0:00A\u001f?\nA\u001f?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n\u000fA\u001f?\nA\u001f","_col7":"","_col8":"?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n","_col9":null,"_col10":null,"_col11":null,"_col12":null,"_col13":null,"_col14":15,"_col15":null,"_col16":9.1073005E-20,"_col17":null,"_col18":null,"_col19":null,"_col20":null,"_col21":null,"_col22":9.1073005E-20,"_col23":null,"_col24":-1.52012298E14,"_col25":-1.51732605E14,"_col26":0.0,"_col27":0.0},"alias":0}
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:256)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.ArrayIndexOutOfBoundsException
+
+	at org.apache.hadoop.hive.ql.exec.JoinOperator.processOp(JoinOperator.java:131)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"joinkey0":"ric-a","joinkey1":"2012-01-02 12:00:00"},"value":{"_col0":"A","_col1":"2012-01-02 12:00:00","_col2":"","_col3":"1971-02-17 11:51:44.7","_col4":2.6547364E-34,"_col5":"???\b include\u0005ric-a\n company-a?\u000b exchange-a\u0007 sector\u0014 2012-01-03 12:","_col6":"0:00A\u001f?\nA\u001f?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n\u000fA\u001f?\nA\u001f","_col7":"","_col8":"?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n","_col9":null,"_col10":null,"_col11":null,"_col12":null,"_col13":null,"_col14":15,"_col15":null,"_col16":9.1073005E-20,"_col17":null,"_col18":null,"_col19":null,"_col20":null,"_col21":null,"_col22":9.1073005E-20,"_col23":null,"_col24":-1.52012298E14,"_col25":-1.51732605E14,"_col26":0.0,"_col27":0.0},"alias":0}
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:256)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.ArrayIndexOutOfBoundsException
+
+	at org.apache.hadoop.hive.ql.exec.JoinOperator.processOp(JoinOperator.java:131)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"joinkey0":"ric-a","joinkey1":"2012-01-02 12:00:00"},"value":{"_col0":"A","_col1":"2012-01-02 12:00:00","_col2":"","_col3":"1971-02-17 11:51:44.7","_col4":2.6547364E-34,"_col5":"???\b include\u0005ric-a\n company-a?\u000b exchange-a\u0007 sector\u0014 2012-01-03 12:","_col6":"0:00A\u001f?\nA\u001f?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n\u000fA\u001f?\nA\u001f","_col7":"","_col8":"?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n","_col9":null,"_col10":null,"_col11":null,"_col12":null,"_col13":null,"_col14":15,"_col15":null,"_col16":9.1073005E-20,"_col17":null,"_col18":null,"_col19":null,"_col20":null,"_col21":null,"_col22":9.1073005E-20,"_col23":null,"_col24":-1.52012298E14,"_col25":-1.51732605E14,"_col26":0.0,"_col27":0.0},"alias":0}
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:256)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.ArrayIndexOutOfBoundsException
+
+	at org.apache.hadoop.hive.ql.exec.JoinOperator.processOp(JoinOperator.java:131)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"player":"John O'Donoghue","team":"Seattle Pilots","league":"AL","year":1969,"games":55.0,"ab":13.0,"r":0.0,"h":1.0,"doubles":1.0,"triples":0.0,"hr":0.0,"rbi":0.0,"sb":0.0,"cs":0.0,"bb":0.0,"so":5.0,"ibb":0.0,"hbp":0.0,"sh":3.0,"sf":0.0,"gidp":0.0}
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:550)
+
+	at org.apache.hadoop.hive.ql.exec.ExecMapper.map(ExecMapper.java:143)
+
+	... 8 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"player":"John O'Donoghue","team":"Seattle Pilots","league":"AL","year":1969,"games":55.0,"ab":13.0,"r":0.0,"h":1.0,"doubles":1.0,"triples":0.0,"hr":0.0,"rbi":0.0,"sb":0.0,"cs":0.0,"bb":0.0,"so":5.0,"ibb":0.0,"hbp":0.0,"sh":3.0,"sf":0.0,"gidp":0.0}
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:550)
+
+	at org.apache.hadoop.hive.ql.exec.ExecMapper.map(ExecMapper.java:143)
+
+	... 8 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"player":"John O'Donoghue","team":"Seattle Pilots","league":"AL","year":1969,"games":55.0,"ab":13.0,"r":0.0,"h":1.0,"doubles":1.0,"triples":0.0,"hr":0.0,"rbi":0.0,"sb":0.0,"cs":0.0,"bb":0.0,"so":5.0,"ibb":0.0,"hbp":0.0,"sh":3.0,"sf":0.0,"gidp":0.0}
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:550)
+
+	at org.apache.hadoop.hive.ql.exec.ExecMapper.map(ExecMapper.java:143)
+
+	... 8 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"player":"John O'Donoghue","team":"Seattle Pilots","league":"AL","year":1969,"games":55.0,"ab":13.0,"r":0.0,"h":1.0,"doubles":1.0,"triples":0.0,"hr":0.0,"rbi":0.0,"sb":0.0,"cs":0.0,"bb":0.0,"so":5.0,"ibb":0.0,"hbp":0.0,"sh":3.0,"sf":0.0,"gidp":0.0}
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:550)
+
+	at org.apache.hadoop.hive.ql.exec.ExecMapper.map(ExecMapper.java:143)
+
+	... 8 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"joinkey0":"ric-a","joinkey1":"2012-01-02 12:00:00"},"value":{"_col0":"A","_col1":"2012-01-02 12:00:00","_col2":"","_col3":"1971-02-17 11:51:44.7","_col4":2.6547364E-34,"_col5":"???\b include\u0005ric-a\n company-a?\u000b exchange-a\u0007 sector\u0014 2012-01-03 12:","_col6":"0:00A\u001f?\nA\u001f?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n\u000fA\u001f?\nA\u001f","_col7":"","_col8":"?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n","_col9":null,"_col10":null,"_col11":null,"_col12":null,"_col13":null,"_col14":15,"_col15":null,"_col16":9.1073005E-20,"_col17":null,"_col18":null,"_col19":null,"_col20":null,"_col21":null,"_col22":9.1073005E-20,"_col23":null,"_col24":-1.52012298E14,"_col25":-1.51732605E14,"_col26":0.0,"_col27":0.0},"alias":0}
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:256)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.ArrayIndexOutOfBoundsException
+
+	at org.apache.hadoop.hive.ql.exec.JoinOperator.processOp(JoinOperator.java:131)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"joinkey0":"ric-a","joinkey1":"2012-01-02 12:00:00"},"value":{"_col0":"A","_col1":"2012-01-02 12:00:00","_col2":"","_col3":"1971-02-17 11:51:44.7","_col4":2.6547364E-34,"_col5":"???\b include\u0005ric-a\n company-a?\u000b exchange-a\u0007 sector\u0014 2012-01-03 12:","_col6":"0:00A\u001f?\nA\u001f?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n\u000fA\u001f?\nA\u001f","_col7":"","_col8":"?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n","_col9":null,"_col10":null,"_col11":null,"_col12":null,"_col13":null,"_col14":15,"_col15":null,"_col16":9.1073005E-20,"_col17":null,"_col18":null,"_col19":null,"_col20":null,"_col21":null,"_col22":9.1073005E-20,"_col23":null,"_col24":-1.52012298E14,"_col25":-1.51732605E14,"_col26":0.0,"_col27":0.0},"alias":0}
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:256)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.ArrayIndexOutOfBoundsException
+
+	at org.apache.hadoop.hive.ql.exec.JoinOperator.processOp(JoinOperator.java:131)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"joinkey0":"ric-a","joinkey1":"2012-01-02 12:00:00"},"value":{"_col0":"A","_col1":"2012-01-02 12:00:00","_col2":"","_col3":"1971-02-17 11:51:44.7","_col4":2.6547364E-34,"_col5":"???\b include\u0005ric-a\n company-a?\u000b exchange-a\u0007 sector\u0014 2012-01-03 12:","_col6":"0:00A\u001f?\nA\u001f?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n\u000fA\u001f?\nA\u001f","_col7":"","_col8":"?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n","_col9":null,"_col10":null,"_col11":null,"_col12":null,"_col13":null,"_col14":15,"_col15":null,"_col16":9.1073005E-20,"_col17":null,"_col18":null,"_col19":null,"_col20":null,"_col21":null,"_col22":9.1073005E-20,"_col23":null,"_col24":-1.52012298E14,"_col25":-1.51732605E14,"_col26":0.0,"_col27":0.0},"alias":0}
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:256)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.ArrayIndexOutOfBoundsException
+
+	at org.apache.hadoop.hive.ql.exec.JoinOperator.processOp(JoinOperator.java:131)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"joinkey0":"ric-a","joinkey1":"2012-01-02 12:00:00"},"value":{"_col0":"A","_col1":"2012-01-02 12:00:00","_col2":"","_col3":"1971-02-17 11:51:44.7","_col4":2.6547364E-34,"_col5":"???\b include\u0005ric-a\n company-a?\u000b exchange-a\u0007 sector\u0014 2012-01-03 12:","_col6":"0:00A\u001f?\nA\u001f?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n\u000fA\u001f?\nA\u001f","_col7":"","_col8":"?\nA\u001f?\n?A\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\nA\u001f?\n","_col9":null,"_col10":null,"_col11":null,"_col12":null,"_col13":null,"_col14":15,"_col15":null,"_col16":9.1073005E-20,"_col17":null,"_col18":null,"_col19":null,"_col20":null,"_col21":null,"_col22":9.1073005E-20,"_col23":null,"_col24":-1.52012298E14,"_col25":-1.51732605E14,"_col26":0.0,"_col27":0.0},"alias":0}
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:256)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.ArrayIndexOutOfBoundsException
+
+	at org.apache.hadoop.hive.ql.exec.JoinOperator.processOp(JoinOperator.java:131)
+
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+
+	... 7 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"player":"John O'Donoghue","team":"Seattle Pilots","league":"AL","year":1969,"games":55.0,"ab":13.0,"r":0.0,"h":1.0,"doubles":1.0,"triples":0.0,"hr":0.0,"rbi":0.0,"sb":0.0,"cs":0.0,"bb":0.0,"so":5.0,"ibb":0.0,"hbp":0.0,"sh":3.0,"sf":0.0,"gidp":0.0}
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:550)
+
+	at org.apache.hadoop.hive.ql.exec.ExecMapper.map(ExecMapper.java:143)
+
+	... 8 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"player":"John O'Donoghue","team":"Seattle Pilots","league":"AL","year":1969,"games":55.0,"ab":13.0,"r":0.0,"h":1.0,"doubles":1.0,"triples":0.0,"hr":0.0,"rbi":0.0,"sb":0.0,"cs":0.0,"bb":0.0,"so":5.0,"ibb":0.0,"hbp":0.0,"sh":3.0,"sf":0.0,"gidp":0.0}
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:550)
+
+	at org.apache.hadoop.hive.ql.exec.ExecMapper.map(ExecMapper.java:143)
+
+	... 8 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"player":"John O'Donoghue","team":"Seattle Pilots","league":"AL","year":1969,"games":55.0,"ab":13.0,"r":0.0,"h":1.0,"doubles":1.0,"triples":0.0,"hr":0.0,"rbi":0.0,"sb":0.0,"cs":0.0,"bb":0.0,"so":5.0,"ibb":0.0,"hbp":0.0,"sh":3.0,"sf":0.0,"gidp":0.0}
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:550)
+
+	at org.apache.hadoop.hive.ql.exec.ExecMapper.map(ExecMapper.java:143)
+
+	... 8 more
+
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row {"player":"John O'Donoghue","team":"Seattle Pilots","league":"AL","year":1969,"games":55.0,"ab":13.0,"r":0.0,"h":1.0,"doubles":1.0,"triples":0.0,"hr":0.0,"rbi":0.0,"sb":0.0,"cs":0.0,"bb":0.0,"so":5.0,"ibb":0.0,"hbp":0.0,"sh":3.0,"sf":0.0,"gidp":0.0}
+
+	at org.apache.hadoop.hive.ql.exec.MapOperator.process(MapOperator.java:550)
+
+	at org.apache.hadoop.hive.ql.exec.ExecMapper.map(ExecMapper.java:143)
+
+	... 8 more
+
